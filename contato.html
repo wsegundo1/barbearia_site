@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia W - Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+
+        <div class="contaiener">
+        <h1 class="img-logo"><img src="img/barb.png" alt="Logo"></h1>
+
+             <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Produtos.html">Produtos</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+             </nav>
+        </div>
+            
+    </header>
+
+    <main>
+        <form>
+            <label for="nome">Nome e Sobrenome</label>
+            <input class="input-padrao" id="nome" type="text" required>
+
+            <label for="email">Email</label>
+            <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input-padrao" id="mensagem" cols="70" rows="10" required></textarea>
+
+            <div>
+            <p>Como prefere o nosso contato?</p>
+            <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email"> Email</label>
+            
+            <label for="readio-telefone"> <input type="radio" name="contato" id="readio-telefone" value="telefone"> Telefone</label>
+           
+            <label for="readio-whatsapp"> <input type="radio" name="contato" id="readio-whatsapp" value="whatsapp" checked> Whatsapp</label>
+            
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                <select id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>    
+            </div>
+            
+            <label class="checkbox"> <input type="checkbox"  id="" checked> Gostaria de receber nossas novidades por email?</label>    
+
+            <input class="enviar" type="submit" value="Enviar Formulário">
+            </div>
+           
+        </form>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="img-logo">
+        <img src="img/barb.png" alt="Logo Rodape">
+        <p> &copy; Copyright Barbearia W - 2022</p>
+    </footer>
+</body>
+</html>
